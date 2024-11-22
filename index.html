@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1>Movie Finder</h1>
+    <img class="backgroundImg" src="./movie-9pvmdtvz4cb0xl37.jpg" alt="" />
+
+    <div class="container">
+      <div class="square"></div>
+      <input type="text" id="searchInput" placeholder="Enter a movie name" />
+      <button class="button-78" role="button" id="searchButton">Search</button>
+
+      <select id="filter" onchange="filterMovies(event)">
+        <option value="" disabled selected>Sort</option>
+        <option value="LOW_TO_HIGH">Release, Older to Newer</option>
+        <option value="HIGH_TO_LOW">Release, Newer to Older</option>
+      </select>
+    </div>
+
+    <div class="title-list"></div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
